@@ -25,7 +25,7 @@ before_script:
 script:
   - >
     nosetests test.py func_test.py
-    --with-gae --without-sandbox --gae-lib-root=$GAE_DIR/google_appengine
+    --with-gae --gae-lib-root=$GAE_DIR/google_appengine
     --with-xunit --xunit-file=shippable/testresults/test.xml
     --with-coverage --cover-xml --cover-xml-file=shippable/codecoverage/coverage.xml
 
